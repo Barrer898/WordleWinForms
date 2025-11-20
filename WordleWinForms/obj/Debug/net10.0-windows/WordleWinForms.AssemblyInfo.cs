@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WordleWinForms")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb8be00c066012f90d4c50cf7110cbdbc772f125")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e1c4e83f336f3b569702273d01ea2ab3f6be6c10")]
 [assembly: System.Reflection.AssemblyProductAttribute("WordleWinForms")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WordleWinForms")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

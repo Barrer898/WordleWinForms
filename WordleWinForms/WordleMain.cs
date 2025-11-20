@@ -9,10 +9,18 @@ namespace WordleWinForms
         public WordleMain()
         {
             InitializeComponent();
+            LetterArray.Fill(this);
         }
         public void WriteLetter(char letter)
         {
+            LetterArray.Array[currentletter / 6, currentletter % 5].Text = letter.ToString();
+            currentletter++;
+            DBG_Output.Text = currentletter.ToString();
+        }
 
+        private void BTN_LetterT_Click(object sender, EventArgs e)
+        {
+            WriteLetter('T');
         }
     }
 }

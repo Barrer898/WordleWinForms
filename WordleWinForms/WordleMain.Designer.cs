@@ -1,12 +1,11 @@
-﻿namespace WordleWinForms
+﻿using System.Security.Cryptography.X509Certificates;
+
+namespace WordleWinForms
 {
     partial class WordleMain
     {
 
-        public class LetterArray
-        {
-            public static RichTextBox[,] Array = new RichTextBox[6, 5];
-        }
+
         /// <summary>
         ///  Required designer variable.
         /// </summary>
@@ -61,36 +60,37 @@
             BTN_LetterM = new Button();
             BTN_Backspace = new Button();
             BTN_Enter = new Button();
-            RTB_Letter11 = new RichTextBox(); LetterArray.Array[0, 0] = RTB_Letter11;
-            RTB_Letter21 = new RichTextBox(); LetterArray.Array[1, 0] = RTB_Letter21;
-            RTB_Letter41 = new RichTextBox(); LetterArray.Array[3, 0] = RTB_Letter41;
-            RTB_Letter31 = new RichTextBox(); LetterArray.Array[2, 0] = RTB_Letter31;
-            RTB_Letter61 = new RichTextBox(); LetterArray.Array[5, 0] = RTB_Letter61;
-            RTB_Letter51 = new RichTextBox(); LetterArray.Array[4, 0] = RTB_Letter51;
-            RTB_Letter62 = new RichTextBox(); LetterArray.Array[5, 1] = RTB_Letter62;
-            RTB_Letter52 = new RichTextBox(); LetterArray.Array[4, 1] = RTB_Letter52;
-            RTB_Letter42 = new RichTextBox(); LetterArray.Array[3, 1] = RTB_Letter42;
-            RTB_Letter32 = new RichTextBox(); LetterArray.Array[2, 1] = RTB_Letter32;
-            RTB_Letter22 = new RichTextBox(); LetterArray.Array[1, 1] = RTB_Letter22;
-            RTB_Letter12 = new RichTextBox(); LetterArray.Array[0, 1] = RTB_Letter12;
-            RTB_Letter63 = new RichTextBox(); LetterArray.Array[5, 2] = RTB_Letter63;
-            RTB_Letter53 = new RichTextBox(); LetterArray.Array[4, 2] = RTB_Letter53;
-            RTB_Letter43 = new RichTextBox(); LetterArray.Array[3, 2] = RTB_Letter43;
-            RTB_Letter33 = new RichTextBox(); LetterArray.Array[2, 2] = RTB_Letter33;
-            RTB_Letter23 = new RichTextBox(); LetterArray.Array[1, 2] = RTB_Letter23;
-            RTB_Letter13 = new RichTextBox(); LetterArray.Array[0, 2] = RTB_Letter13;
-            RTB_Letter64 = new RichTextBox(); LetterArray.Array[5, 3] = RTB_Letter64;
-            RTB_Letter54 = new RichTextBox(); LetterArray.Array[4, 3] = RTB_Letter54;
-            RTB_Letter44 = new RichTextBox(); LetterArray.Array[3, 3] = RTB_Letter44;
-            RTB_Letter34 = new RichTextBox(); LetterArray.Array[2, 3] = RTB_Letter34;
-            RTB_Letter24 = new RichTextBox(); LetterArray.Array[1, 3] = RTB_Letter24;
-            RTB_Letter14 = new RichTextBox(); LetterArray.Array[0, 3] = RTB_Letter14;
-            RTB_Letter65 = new RichTextBox(); LetterArray.Array[5, 4] = RTB_Letter65;
-            RTB_Letter55 = new RichTextBox(); LetterArray.Array[4, 4] = RTB_Letter55;
-            RTB_Letter45 = new RichTextBox(); LetterArray.Array[3, 4] = RTB_Letter45;
-            RTB_Letter35 = new RichTextBox(); LetterArray.Array[2, 4] = RTB_Letter35;
-            RTB_Letter25 = new RichTextBox(); LetterArray.Array[1, 4] = RTB_Letter25;
-            RTB_Letter15 = new RichTextBox(); LetterArray.Array[0, 4] = RTB_Letter15;
+            RTB_Letter11 = new RichTextBox();
+            RTB_Letter21 = new RichTextBox();
+            RTB_Letter41 = new RichTextBox();
+            RTB_Letter31 = new RichTextBox();
+            RTB_Letter61 = new RichTextBox();
+            RTB_Letter51 = new RichTextBox();
+            RTB_Letter62 = new RichTextBox();
+            RTB_Letter52 = new RichTextBox();
+            RTB_Letter42 = new RichTextBox();
+            RTB_Letter32 = new RichTextBox();
+            RTB_Letter22 = new RichTextBox();
+            RTB_Letter12 = new RichTextBox();
+            RTB_Letter63 = new RichTextBox();
+            RTB_Letter53 = new RichTextBox();
+            RTB_Letter43 = new RichTextBox();
+            RTB_Letter33 = new RichTextBox();
+            RTB_Letter23 = new RichTextBox();
+            RTB_Letter13 = new RichTextBox();
+            RTB_Letter64 = new RichTextBox();
+            RTB_Letter54 = new RichTextBox();
+            RTB_Letter44 = new RichTextBox();
+            RTB_Letter34 = new RichTextBox();
+            RTB_Letter24 = new RichTextBox();
+            RTB_Letter14 = new RichTextBox();
+            RTB_Letter65 = new RichTextBox();
+            RTB_Letter55 = new RichTextBox();
+            RTB_Letter45 = new RichTextBox();
+            RTB_Letter35 = new RichTextBox();
+            RTB_Letter25 = new RichTextBox();
+            RTB_Letter15 = new RichTextBox();
+            DBG_Output = new Label();
             SuspendLayout();
             // 
             // BTN_LetterQ
@@ -142,6 +142,7 @@
             BTN_LetterT.TabIndex = 4;
             BTN_LetterT.Text = "T";
             BTN_LetterT.UseVisualStyleBackColor = true;
+            BTN_LetterT.Click += BTN_LetterT_Click;
             // 
             // BTN_LetterY
             // 
@@ -643,11 +644,21 @@
             RTB_Letter15.TabIndex = 52;
             RTB_Letter15.Text = "";
             // 
+            // DBG_Output
+            // 
+            DBG_Output.AutoSize = true;
+            DBG_Output.Location = new Point(21, 21);
+            DBG_Output.Name = "DBG_Output";
+            DBG_Output.Size = new Size(38, 15);
+            DBG_Output.TabIndex = 58;
+            DBG_Output.Text = "label1";
+            // 
             // WordleMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(992, 621);
+            Controls.Add(DBG_Output);
             Controls.Add(RTB_Letter65);
             Controls.Add(RTB_Letter55);
             Controls.Add(RTB_Letter45);
@@ -709,8 +720,46 @@
             Name = "WordleMain";
             Text = "Form1";
             ResumeLayout(false);
-        }
+            PerformLayout();
 
+        }
+        public class LetterArray
+        {
+            public static RichTextBox[,] Array = new RichTextBox[6, 5];
+            public static void Fill(WordleMain Form)
+            {
+                Array[0, 0] = Form.RTB_Letter11;
+                Array[0, 1] = Form.RTB_Letter12;
+                Array[0, 2] = Form.RTB_Letter13;
+                Array[0, 3] = Form.RTB_Letter14;
+                Array[0, 4] = Form.RTB_Letter15;
+                Array[1, 0] = Form.RTB_Letter21;
+                Array[1, 1] = Form.RTB_Letter22;
+                Array[1, 2] = Form.RTB_Letter23;
+                Array[1, 3] = Form.RTB_Letter24;
+                Array[1, 4] = Form.RTB_Letter25;
+                Array[2, 0] = Form.RTB_Letter31;
+                Array[2, 1] = Form.RTB_Letter32;
+                Array[2, 2] = Form.RTB_Letter33;
+                Array[2, 3] = Form.RTB_Letter34;
+                Array[2, 4] = Form.RTB_Letter35;
+                Array[3, 0] = Form.RTB_Letter41;
+                Array[3, 1] = Form.RTB_Letter42;
+                Array[3, 2] = Form.RTB_Letter43;
+                Array[3, 3] = Form.RTB_Letter44;
+                Array[3, 4] = Form.RTB_Letter45;
+                Array[4, 0] = Form.RTB_Letter51;
+                Array[4, 1] = Form.RTB_Letter52;
+                Array[4, 2] = Form.RTB_Letter53;
+                Array[4, 3] = Form.RTB_Letter54;
+                Array[4, 4] = Form.RTB_Letter55;
+                Array[5, 0] = Form.RTB_Letter61;
+                Array[5, 1] = Form.RTB_Letter62;
+                Array[5, 2] = Form.RTB_Letter63;
+                Array[5, 3] = Form.RTB_Letter64;
+                Array[5, 4] = Form.RTB_Letter65;
+            }
+        }
         #endregion
 
         private Button BTN_LetterQ;
@@ -771,6 +820,7 @@
         private RichTextBox RTB_Letter35;
         private RichTextBox RTB_Letter25;
         private RichTextBox RTB_Letter15;
+        private Label DBG_Output;
     }
 
 }
