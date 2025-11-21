@@ -379,6 +379,7 @@ namespace WordleWinForms
             RTB_Letter11.Location = new Point(327, 12);
             RTB_Letter11.MaxLength = 1;
             RTB_Letter11.Name = "RTB_Letter11";
+            RTB_Letter11.ReadOnly = true;
             RTB_Letter11.Size = new Size(54, 51);
             RTB_Letter11.TabIndex = 28;
             RTB_Letter11.Text = "";

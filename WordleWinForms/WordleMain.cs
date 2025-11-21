@@ -13,7 +13,7 @@ namespace WordleWinForms
         }
         public void WriteLetter(char letter)
         {
-            LetterArray.Array[currentletter / 6, currentletter % 5].Text = letter.ToString();
+            LetterArray.Array[currentletter / 5, currentletter % 5].Text = letter.ToString();
             currentletter++;
             DBG_Output.Text = currentletter.ToString();
         }
