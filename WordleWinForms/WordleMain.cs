@@ -1,3 +1,4 @@
+using System.Reflection;
 using System.Transactions;
 
 namespace WordleWinForms
@@ -6,14 +7,57 @@ namespace WordleWinForms
     {
         public int lineNumber = 0;
         public int currentletter = 0;
-        public string wordleAnswer = "DRILL";
+
+        public string wordleAnswer = GetRandomLine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + @"\Words.txt");
         public WordleMain()
         {
             InitializeComponent();
             LetterArray.Fill(this);
-            #if RELEASE 
+#if RELEASE
                 DBG_Output.Visible = false;
-            #endif 
+#endif
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.InitialDirectory = "c:\\"; // Start directory
+                openFileDialog.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*"; // File filter
+                openFileDialog.Title = "Select a Word List File";
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    string filePath = openFileDialog.FileName;
+                    string randomLine = GetRandomLine(filePath);
+                    MessageBox.Show($"Random line: {randomLine}");
+                }
+            }
+        }
+        static string GetRandomLine(string filePath)
+        {
+            if (!File.Exists(filePath))
+            {
+                throw new FileNotFoundException("The specified file does not exist.", filePath);
+            }
+
+            int lineCount = 0;
+            using (var reader = new StreamReader(filePath))
+            {
+                while (reader.ReadLine() != null)
+                {
+                    lineCount++;
+                }
+            }
+
+            Random random = new Random();
+            int randomIndex = random.Next(lineCount);
+            string randomLine = null;
+            using (var reader = new StreamReader(filePath))
+            {
+                for (int i = 0; i <= randomIndex; i++)
+                {
+                    randomLine = reader.ReadLine();
+                }
+            }
+
+            return randomLine;
         }
         public bool isLastLetterInLine()
         {
