@@ -4,7 +4,6 @@ namespace WordleWinForms
 {
     public partial class WordleMain : Form
     {
-        public bool allowNextLine = false;
         public int lineNumber = 0;
         public int currentletter = 0;
         public string wordleAnswer = "TESTA";
@@ -37,12 +36,41 @@ namespace WordleWinForms
             }
         }
         public void WordTest()
-        {
-            
-            if(isLastLetterInLine())
+        {         
+
+            if (isFirstLetterInLine())
             {
+                MessageBox.Show("You didnt input anything!");
+                return;
+            }
+            if (!isLastLetterInLine())
+            {
+                MessageBox.Show("Not enough letters!");
+                return;
+            }
+            if (isLastLetterInLine()) // checking time >:)
+            {
+                
+                int correctLetters = 0;
+                for(int i = 0; i < 5;i++)
+                {
+                    RichTextBox currentLetter = LetterArray.Array[lineNumber, i];
+                    char currentChar = currentLetter.Text[currentLetter.Text.Length - 1];
+                    if (wordleAnswer.Contains(currentChar) && currentChar != wordleAnswer[i])
+                    {
+                        currentLetter.BackColor = Color.Yellow;
+                        continue;
+                    }
+                    if (wordleAnswer.Contains(currentChar) && currentChar == wordleAnswer[i])
+                    {
+                        currentLetter.BackColor = Color.Green;
+                        continue;
+                    }
+                    currentLetter.BackColor = Color.Gray;
+                }
+                
+                
                 lineNumber++;
-                allowNextLine = true;
             }
         }
         private void BTN_Backspace_Click(object sender, EventArgs e)
