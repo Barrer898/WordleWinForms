@@ -102,6 +102,7 @@ namespace WordleWinForms
             BTN_LetterQ.TabIndex = 0;
             BTN_LetterQ.Text = "Q";
             BTN_LetterQ.UseVisualStyleBackColor = true;
+            BTN_LetterQ.Click += BTN_LetterQ_Click;
             // 
             // BTN_LetterW
             // 
@@ -112,6 +113,7 @@ namespace WordleWinForms
             BTN_LetterW.TabIndex = 1;
             BTN_LetterW.Text = "W";
             BTN_LetterW.UseVisualStyleBackColor = true;
+            BTN_LetterW.Click += BTN_LetterW_Click;
             // 
             // BTN_LetterE
             // 
@@ -122,6 +124,7 @@ namespace WordleWinForms
             BTN_LetterE.TabIndex = 2;
             BTN_LetterE.Text = "E";
             BTN_LetterE.UseVisualStyleBackColor = true;
+            BTN_LetterE.Click += BTN_LetterE_Click;
             // 
             // BTN_LetterR
             // 
@@ -132,6 +135,7 @@ namespace WordleWinForms
             BTN_LetterR.TabIndex = 3;
             BTN_LetterR.Text = "R";
             BTN_LetterR.UseVisualStyleBackColor = true;
+            BTN_LetterR.Click += BTN_LetterR_Click;
             // 
             // BTN_LetterT
             // 
@@ -153,6 +157,7 @@ namespace WordleWinForms
             BTN_LetterY.TabIndex = 5;
             BTN_LetterY.Text = "Y";
             BTN_LetterY.UseVisualStyleBackColor = true;
+            BTN_LetterY.Click += BTN_LetterY_Click;
             // 
             // BTN_LetterU
             // 
@@ -163,6 +168,7 @@ namespace WordleWinForms
             BTN_LetterU.TabIndex = 6;
             BTN_LetterU.Text = "U";
             BTN_LetterU.UseVisualStyleBackColor = true;
+            BTN_LetterU.Click += BTN_LetterU_Click;
             // 
             // BTN_LetterI
             // 
@@ -173,6 +179,7 @@ namespace WordleWinForms
             BTN_LetterI.TabIndex = 7;
             BTN_LetterI.Text = "I";
             BTN_LetterI.UseVisualStyleBackColor = true;
+            BTN_LetterI.Click += BTN_LetterI_Click;
             // 
             // BTN_LetterO
             // 
@@ -183,6 +190,7 @@ namespace WordleWinForms
             BTN_LetterO.TabIndex = 8;
             BTN_LetterO.Text = "O";
             BTN_LetterO.UseVisualStyleBackColor = true;
+            BTN_LetterO.Click += BTN_LetterO_Click;
             // 
             // BTN_LetterP
             // 
@@ -193,6 +201,7 @@ namespace WordleWinForms
             BTN_LetterP.TabIndex = 9;
             BTN_LetterP.Text = "P";
             BTN_LetterP.UseVisualStyleBackColor = true;
+            BTN_LetterP.Click += BTN_LetterP_Click;
             // 
             // BTN_LetterA
             // 
@@ -203,6 +212,7 @@ namespace WordleWinForms
             BTN_LetterA.TabIndex = 10;
             BTN_LetterA.Text = "A";
             BTN_LetterA.UseVisualStyleBackColor = true;
+            BTN_LetterA.Click += BTN_LetterA_Click;
             // 
             // BTN_LetterS
             // 
@@ -213,6 +223,7 @@ namespace WordleWinForms
             BTN_LetterS.TabIndex = 11;
             BTN_LetterS.Text = "S";
             BTN_LetterS.UseVisualStyleBackColor = true;
+            BTN_LetterS.Click += BTN_LetterS_Click;
             // 
             // BTN_LetterD
             // 
@@ -223,6 +234,7 @@ namespace WordleWinForms
             BTN_LetterD.TabIndex = 12;
             BTN_LetterD.Text = "D";
             BTN_LetterD.UseVisualStyleBackColor = true;
+            BTN_LetterD.Click += BTN_LetterD_Click;
             // 
             // BTN_LetterF
             // 
@@ -233,6 +245,7 @@ namespace WordleWinForms
             BTN_LetterF.TabIndex = 13;
             BTN_LetterF.Text = "F";
             BTN_LetterF.UseVisualStyleBackColor = true;
+            BTN_LetterF.Click += BTN_LetterF_Click;
             // 
             // BTN_LetterG
             // 
@@ -243,6 +256,7 @@ namespace WordleWinForms
             BTN_LetterG.TabIndex = 14;
             BTN_LetterG.Text = "G";
             BTN_LetterG.UseVisualStyleBackColor = true;
+            BTN_LetterG.Click += BTN_LetterG_Click;
             // 
             // BTN_LetterH
             // 
@@ -253,6 +267,7 @@ namespace WordleWinForms
             BTN_LetterH.TabIndex = 15;
             BTN_LetterH.Text = "H";
             BTN_LetterH.UseVisualStyleBackColor = true;
+            BTN_LetterH.Click += BTN_LetterH_Click;
             // 
             // BTN_LetterJ
             // 
@@ -263,6 +278,7 @@ namespace WordleWinForms
             BTN_LetterJ.TabIndex = 16;
             BTN_LetterJ.Text = "J";
             BTN_LetterJ.UseVisualStyleBackColor = true;
+            BTN_LetterJ.Click += BTN_LetterJ_Click;
             // 
             // BTN_LetterK
             // 
@@ -273,6 +289,7 @@ namespace WordleWinForms
             BTN_LetterK.TabIndex = 17;
             BTN_LetterK.Text = "K";
             BTN_LetterK.UseVisualStyleBackColor = true;
+            BTN_LetterK.Click += BTN_LetterK_Click;
             // 
             // BTN_LetterL
             // 
@@ -283,6 +300,7 @@ namespace WordleWinForms
             BTN_LetterL.TabIndex = 18;
             BTN_LetterL.Text = "L";
             BTN_LetterL.UseVisualStyleBackColor = true;
+            BTN_LetterL.Click += BTN_LetterL_Click;
             // 
             // BTN_LetterZ
             // 
@@ -293,6 +311,7 @@ namespace WordleWinForms
             BTN_LetterZ.TabIndex = 19;
             BTN_LetterZ.Text = "Z";
             BTN_LetterZ.UseVisualStyleBackColor = true;
+            BTN_LetterZ.Click += BTN_LetterZ_Click;
             // 
             // BTN_LetterX
             // 
@@ -303,6 +322,7 @@ namespace WordleWinForms
             BTN_LetterX.TabIndex = 20;
             BTN_LetterX.Text = "X";
             BTN_LetterX.UseVisualStyleBackColor = true;
+            BTN_LetterX.Click += BTN_LetterX_Click;
             // 
             // BTN_LetterC
             // 
@@ -313,6 +333,7 @@ namespace WordleWinForms
             BTN_LetterC.TabIndex = 21;
             BTN_LetterC.Text = "C";
             BTN_LetterC.UseVisualStyleBackColor = true;
+            BTN_LetterC.Click += BTN_LetterC_Click;
             // 
             // BTN_LetterV
             // 
@@ -323,6 +344,7 @@ namespace WordleWinForms
             BTN_LetterV.TabIndex = 22;
             BTN_LetterV.Text = "V";
             BTN_LetterV.UseVisualStyleBackColor = true;
+            BTN_LetterV.Click += BTN_LetterV_Click;
             // 
             // BTN_LetterB
             // 
@@ -333,6 +355,7 @@ namespace WordleWinForms
             BTN_LetterB.TabIndex = 23;
             BTN_LetterB.Text = "B";
             BTN_LetterB.UseVisualStyleBackColor = true;
+            BTN_LetterB.Click += BTN_LetterB_Click;
             // 
             // BTN_LetterN
             // 
@@ -343,6 +366,7 @@ namespace WordleWinForms
             BTN_LetterN.TabIndex = 24;
             BTN_LetterN.Text = "N";
             BTN_LetterN.UseVisualStyleBackColor = true;
+            BTN_LetterN.Click += BTN_LetterN_Click;
             // 
             // BTN_LetterM
             // 
@@ -353,6 +377,7 @@ namespace WordleWinForms
             BTN_LetterM.TabIndex = 25;
             BTN_LetterM.Text = "M";
             BTN_LetterM.UseVisualStyleBackColor = true;
+            BTN_LetterM.Click += BTN_LetterM_Click;
             // 
             // BTN_Backspace
             // 
@@ -363,6 +388,7 @@ namespace WordleWinForms
             BTN_Backspace.TabIndex = 26;
             BTN_Backspace.Text = "Backspace";
             BTN_Backspace.UseVisualStyleBackColor = true;
+            BTN_Backspace.Click += BTN_Backspace_Click;
             // 
             // BTN_Enter
             // 
@@ -373,9 +399,12 @@ namespace WordleWinForms
             BTN_Enter.TabIndex = 27;
             BTN_Enter.Text = "Enter";
             BTN_Enter.UseVisualStyleBackColor = true;
+            BTN_Enter.Click += BTN_Enter_Click;
             // 
             // RTB_Letter11
             // 
+            RTB_Letter11.BorderStyle = BorderStyle.FixedSingle;
+            RTB_Letter11.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
             RTB_Letter11.Location = new Point(327, 12);
             RTB_Letter11.MaxLength = 1;
             RTB_Letter11.Name = "RTB_Letter11";
@@ -386,261 +415,319 @@ namespace WordleWinForms
             // 
             // RTB_Letter21
             // 
+            RTB_Letter21.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
             RTB_Letter21.Location = new Point(327, 69);
             RTB_Letter21.MaxLength = 1;
             RTB_Letter21.Name = "RTB_Letter21";
+            RTB_Letter21.ReadOnly = true;
             RTB_Letter21.Size = new Size(54, 51);
             RTB_Letter21.TabIndex = 29;
             RTB_Letter21.Text = "";
             // 
             // RTB_Letter41
             // 
+            RTB_Letter41.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
             RTB_Letter41.Location = new Point(327, 183);
             RTB_Letter41.MaxLength = 1;
             RTB_Letter41.Name = "RTB_Letter41";
+            RTB_Letter41.ReadOnly = true;
             RTB_Letter41.Size = new Size(54, 51);
             RTB_Letter41.TabIndex = 31;
             RTB_Letter41.Text = "";
             // 
             // RTB_Letter31
             // 
+            RTB_Letter31.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
             RTB_Letter31.Location = new Point(327, 126);
             RTB_Letter31.MaxLength = 1;
             RTB_Letter31.Name = "RTB_Letter31";
+            RTB_Letter31.ReadOnly = true;
             RTB_Letter31.Size = new Size(54, 51);
             RTB_Letter31.TabIndex = 30;
             RTB_Letter31.Text = "";
             // 
             // RTB_Letter61
             // 
+            RTB_Letter61.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
             RTB_Letter61.Location = new Point(327, 297);
             RTB_Letter61.MaxLength = 1;
             RTB_Letter61.Name = "RTB_Letter61";
+            RTB_Letter61.ReadOnly = true;
             RTB_Letter61.Size = new Size(54, 51);
             RTB_Letter61.TabIndex = 33;
             RTB_Letter61.Text = "";
             // 
             // RTB_Letter51
             // 
+            RTB_Letter51.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
             RTB_Letter51.Location = new Point(327, 240);
             RTB_Letter51.MaxLength = 1;
             RTB_Letter51.Name = "RTB_Letter51";
+            RTB_Letter51.ReadOnly = true;
             RTB_Letter51.Size = new Size(54, 51);
             RTB_Letter51.TabIndex = 32;
             RTB_Letter51.Text = "";
             // 
             // RTB_Letter62
             // 
+            RTB_Letter62.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
             RTB_Letter62.Location = new Point(387, 297);
             RTB_Letter62.MaxLength = 1;
             RTB_Letter62.Name = "RTB_Letter62";
+            RTB_Letter62.ReadOnly = true;
             RTB_Letter62.Size = new Size(54, 51);
             RTB_Letter62.TabIndex = 39;
             RTB_Letter62.Text = "";
             // 
             // RTB_Letter52
             // 
+            RTB_Letter52.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
             RTB_Letter52.Location = new Point(387, 240);
             RTB_Letter52.MaxLength = 1;
             RTB_Letter52.Name = "RTB_Letter52";
+            RTB_Letter52.ReadOnly = true;
             RTB_Letter52.Size = new Size(54, 51);
             RTB_Letter52.TabIndex = 38;
             RTB_Letter52.Text = "";
             // 
             // RTB_Letter42
             // 
+            RTB_Letter42.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
             RTB_Letter42.Location = new Point(387, 183);
             RTB_Letter42.MaxLength = 1;
             RTB_Letter42.Name = "RTB_Letter42";
+            RTB_Letter42.ReadOnly = true;
             RTB_Letter42.Size = new Size(54, 51);
             RTB_Letter42.TabIndex = 37;
             RTB_Letter42.Text = "";
             // 
             // RTB_Letter32
             // 
+            RTB_Letter32.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
             RTB_Letter32.Location = new Point(387, 126);
             RTB_Letter32.MaxLength = 1;
             RTB_Letter32.Name = "RTB_Letter32";
+            RTB_Letter32.ReadOnly = true;
             RTB_Letter32.Size = new Size(54, 51);
             RTB_Letter32.TabIndex = 36;
             RTB_Letter32.Text = "";
             // 
             // RTB_Letter22
             // 
+            RTB_Letter22.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
             RTB_Letter22.Location = new Point(387, 69);
             RTB_Letter22.MaxLength = 1;
             RTB_Letter22.Name = "RTB_Letter22";
+            RTB_Letter22.ReadOnly = true;
             RTB_Letter22.Size = new Size(54, 51);
             RTB_Letter22.TabIndex = 35;
             RTB_Letter22.Text = "";
             // 
             // RTB_Letter12
             // 
+            RTB_Letter12.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
             RTB_Letter12.Location = new Point(387, 12);
             RTB_Letter12.MaxLength = 1;
             RTB_Letter12.Name = "RTB_Letter12";
+            RTB_Letter12.ReadOnly = true;
             RTB_Letter12.Size = new Size(54, 51);
             RTB_Letter12.TabIndex = 34;
             RTB_Letter12.Text = "";
             // 
             // RTB_Letter63
             // 
+            RTB_Letter63.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
             RTB_Letter63.Location = new Point(447, 297);
             RTB_Letter63.MaxLength = 1;
             RTB_Letter63.Name = "RTB_Letter63";
+            RTB_Letter63.ReadOnly = true;
             RTB_Letter63.Size = new Size(54, 51);
             RTB_Letter63.TabIndex = 45;
             RTB_Letter63.Text = "";
             // 
             // RTB_Letter53
             // 
+            RTB_Letter53.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
             RTB_Letter53.Location = new Point(447, 240);
             RTB_Letter53.MaxLength = 1;
             RTB_Letter53.Name = "RTB_Letter53";
+            RTB_Letter53.ReadOnly = true;
             RTB_Letter53.Size = new Size(54, 51);
             RTB_Letter53.TabIndex = 44;
             RTB_Letter53.Text = "";
             // 
             // RTB_Letter43
             // 
+            RTB_Letter43.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
             RTB_Letter43.Location = new Point(447, 183);
             RTB_Letter43.MaxLength = 1;
             RTB_Letter43.Name = "RTB_Letter43";
+            RTB_Letter43.ReadOnly = true;
             RTB_Letter43.Size = new Size(54, 51);
             RTB_Letter43.TabIndex = 43;
             RTB_Letter43.Text = "";
             // 
             // RTB_Letter33
             // 
+            RTB_Letter33.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
             RTB_Letter33.Location = new Point(447, 126);
             RTB_Letter33.MaxLength = 1;
             RTB_Letter33.Name = "RTB_Letter33";
+            RTB_Letter33.ReadOnly = true;
             RTB_Letter33.Size = new Size(54, 51);
             RTB_Letter33.TabIndex = 42;
             RTB_Letter33.Text = "";
             // 
             // RTB_Letter23
             // 
+            RTB_Letter23.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
             RTB_Letter23.Location = new Point(447, 69);
             RTB_Letter23.MaxLength = 1;
             RTB_Letter23.Name = "RTB_Letter23";
+            RTB_Letter23.ReadOnly = true;
             RTB_Letter23.Size = new Size(54, 51);
             RTB_Letter23.TabIndex = 41;
             RTB_Letter23.Text = "";
             // 
             // RTB_Letter13
             // 
+            RTB_Letter13.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
             RTB_Letter13.Location = new Point(447, 12);
             RTB_Letter13.MaxLength = 1;
             RTB_Letter13.Name = "RTB_Letter13";
+            RTB_Letter13.ReadOnly = true;
             RTB_Letter13.Size = new Size(54, 51);
             RTB_Letter13.TabIndex = 40;
             RTB_Letter13.Text = "";
             // 
             // RTB_Letter64
             // 
+            RTB_Letter64.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
             RTB_Letter64.Location = new Point(507, 297);
             RTB_Letter64.MaxLength = 1;
             RTB_Letter64.Name = "RTB_Letter64";
+            RTB_Letter64.ReadOnly = true;
             RTB_Letter64.Size = new Size(54, 51);
             RTB_Letter64.TabIndex = 51;
             RTB_Letter64.Text = "";
             // 
             // RTB_Letter54
             // 
+            RTB_Letter54.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
             RTB_Letter54.Location = new Point(507, 240);
             RTB_Letter54.MaxLength = 1;
             RTB_Letter54.Name = "RTB_Letter54";
+            RTB_Letter54.ReadOnly = true;
             RTB_Letter54.Size = new Size(54, 51);
             RTB_Letter54.TabIndex = 50;
             RTB_Letter54.Text = "";
             // 
             // RTB_Letter44
             // 
+            RTB_Letter44.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
             RTB_Letter44.Location = new Point(507, 183);
             RTB_Letter44.MaxLength = 1;
             RTB_Letter44.Name = "RTB_Letter44";
+            RTB_Letter44.ReadOnly = true;
             RTB_Letter44.Size = new Size(54, 51);
             RTB_Letter44.TabIndex = 49;
             RTB_Letter44.Text = "";
             // 
             // RTB_Letter34
             // 
+            RTB_Letter34.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
             RTB_Letter34.Location = new Point(507, 126);
             RTB_Letter34.MaxLength = 1;
             RTB_Letter34.Name = "RTB_Letter34";
+            RTB_Letter34.ReadOnly = true;
             RTB_Letter34.Size = new Size(54, 51);
             RTB_Letter34.TabIndex = 48;
             RTB_Letter34.Text = "";
             // 
             // RTB_Letter24
             // 
+            RTB_Letter24.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
             RTB_Letter24.Location = new Point(507, 69);
             RTB_Letter24.MaxLength = 1;
             RTB_Letter24.Name = "RTB_Letter24";
+            RTB_Letter24.ReadOnly = true;
             RTB_Letter24.Size = new Size(54, 51);
             RTB_Letter24.TabIndex = 47;
             RTB_Letter24.Text = "";
             // 
             // RTB_Letter14
             // 
+            RTB_Letter14.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
             RTB_Letter14.Location = new Point(507, 12);
             RTB_Letter14.MaxLength = 1;
             RTB_Letter14.Name = "RTB_Letter14";
+            RTB_Letter14.ReadOnly = true;
             RTB_Letter14.Size = new Size(54, 51);
             RTB_Letter14.TabIndex = 46;
             RTB_Letter14.Text = "";
             // 
             // RTB_Letter65
             // 
+            RTB_Letter65.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
             RTB_Letter65.Location = new Point(567, 297);
             RTB_Letter65.MaxLength = 1;
             RTB_Letter65.Name = "RTB_Letter65";
+            RTB_Letter65.ReadOnly = true;
             RTB_Letter65.Size = new Size(54, 51);
             RTB_Letter65.TabIndex = 57;
             RTB_Letter65.Text = "";
             // 
             // RTB_Letter55
             // 
+            RTB_Letter55.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
             RTB_Letter55.Location = new Point(567, 240);
             RTB_Letter55.MaxLength = 1;
             RTB_Letter55.Name = "RTB_Letter55";
+            RTB_Letter55.ReadOnly = true;
             RTB_Letter55.Size = new Size(54, 51);
             RTB_Letter55.TabIndex = 56;
             RTB_Letter55.Text = "";
             // 
             // RTB_Letter45
             // 
+            RTB_Letter45.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
             RTB_Letter45.Location = new Point(567, 183);
             RTB_Letter45.MaxLength = 1;
             RTB_Letter45.Name = "RTB_Letter45";
+            RTB_Letter45.ReadOnly = true;
             RTB_Letter45.Size = new Size(54, 51);
             RTB_Letter45.TabIndex = 55;
             RTB_Letter45.Text = "";
             // 
             // RTB_Letter35
             // 
+            RTB_Letter35.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
             RTB_Letter35.Location = new Point(567, 126);
             RTB_Letter35.MaxLength = 1;
             RTB_Letter35.Name = "RTB_Letter35";
+            RTB_Letter35.ReadOnly = true;
             RTB_Letter35.Size = new Size(54, 51);
             RTB_Letter35.TabIndex = 54;
             RTB_Letter35.Text = "";
             // 
             // RTB_Letter25
             // 
+            RTB_Letter25.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
             RTB_Letter25.Location = new Point(567, 69);
             RTB_Letter25.MaxLength = 1;
             RTB_Letter25.Name = "RTB_Letter25";
+            RTB_Letter25.ReadOnly = true;
             RTB_Letter25.Size = new Size(54, 51);
             RTB_Letter25.TabIndex = 53;
             RTB_Letter25.Text = "";
             // 
             // RTB_Letter15
             // 
+            RTB_Letter15.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
             RTB_Letter15.Location = new Point(567, 12);
             RTB_Letter15.MaxLength = 1;
             RTB_Letter15.Name = "RTB_Letter15";
+            RTB_Letter15.ReadOnly = true;
             RTB_Letter15.Size = new Size(54, 51);
             RTB_Letter15.TabIndex = 52;
             RTB_Letter15.Text = "";
