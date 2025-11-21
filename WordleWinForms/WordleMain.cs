@@ -6,7 +6,7 @@ namespace WordleWinForms
     {
         public int lineNumber = 0;
         public int currentletter = 0;
-        public string wordleAnswer = "TESTA";
+        public string wordleAnswer = "DRILL";
         public WordleMain()
         {
             InitializeComponent();
@@ -50,25 +50,38 @@ namespace WordleWinForms
             }
             if (isLastLetterInLine()) // checking time >:)
             {
-                
                 int correctLetters = 0;
                 for(int i = 0; i < 5;i++)
                 {
                     RichTextBox currentLetter = LetterArray.Array[lineNumber, i];
                     char currentChar = currentLetter.Text[currentLetter.Text.Length - 1];
+                    if (!wordleAnswer.Contains(currentChar) && currentChar != wordleAnswer[i])
+                    {
+                        currentLetter.BackColor = Color.Gray;
+                        LetterArray.KeyBoardDictonary.TryGetValue(currentChar, out Button _Button);
+                        if(_Button.BackColor != Color.Gray && _Button.BackColor != Color.Yellow && _Button.BackColor != Color.Green) _Button.BackColor = Color.Gray;
+                        continue;
+                    }
                     if (wordleAnswer.Contains(currentChar) && currentChar != wordleAnswer[i])
                     {
                         currentLetter.BackColor = Color.Yellow;
+                        LetterArray.KeyBoardDictonary.TryGetValue(currentChar, out Button _Button);
+                        if (_Button.BackColor != Color.Green && _Button.BackColor != Color.Yellow) _Button.BackColor = Color.Yellow;
                         continue;
                     }
                     if (wordleAnswer.Contains(currentChar) && currentChar == wordleAnswer[i])
                     {
                         currentLetter.BackColor = Color.Green;
+                        correctLetters++;
+                        LetterArray.KeyBoardDictonary.TryGetValue(currentChar, out Button _Button);
+                        if (_Button.BackColor != Color.Green) _Button.BackColor = Color.Green;
                         continue;
-                    }
-                    currentLetter.BackColor = Color.Gray;
+                    }                    
                 }
-                
+                if(correctLetters == 5)
+                {
+                    MessageBox.Show("Correct answer!");
+                }
                 
                 lineNumber++;
             }

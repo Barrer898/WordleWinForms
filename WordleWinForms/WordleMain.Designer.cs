@@ -814,6 +814,7 @@ namespace WordleWinForms
         public class LetterArray
         {
             public static RichTextBox[,] Array = new RichTextBox[6, 5];
+            public static Dictionary<char, Button> KeyBoardDictonary = new Dictionary<char, Button>();
             public static void Fill(WordleMain Form)
             {
                 Array[0, 0] = Form.RTB_Letter11;
@@ -846,6 +847,35 @@ namespace WordleWinForms
                 Array[5, 2] = Form.RTB_Letter63;
                 Array[5, 3] = Form.RTB_Letter64;
                 Array[5, 4] = Form.RTB_Letter65;
+
+                //Keyboard
+
+                KeyBoardDictonary.Add('Q', Form.BTN_LetterQ);
+                KeyBoardDictonary.Add('W', Form.BTN_LetterW);
+                KeyBoardDictonary.Add('E', Form.BTN_LetterE);
+                KeyBoardDictonary.Add('R', Form.BTN_LetterR);
+                KeyBoardDictonary.Add('T', Form.BTN_LetterT);
+                KeyBoardDictonary.Add('Y', Form.BTN_LetterY);
+                KeyBoardDictonary.Add('U', Form.BTN_LetterU);
+                KeyBoardDictonary.Add('I', Form.BTN_LetterI);
+                KeyBoardDictonary.Add('O', Form.BTN_LetterO);
+                KeyBoardDictonary.Add('P', Form.BTN_LetterP);
+                KeyBoardDictonary.Add('A', Form.BTN_LetterA);
+                KeyBoardDictonary.Add('S', Form.BTN_LetterS);
+                KeyBoardDictonary.Add('D', Form.BTN_LetterD);
+                KeyBoardDictonary.Add('F', Form.BTN_LetterF);
+                KeyBoardDictonary.Add('G', Form.BTN_LetterG);
+                KeyBoardDictonary.Add('H', Form.BTN_LetterH);
+                KeyBoardDictonary.Add('J', Form.BTN_LetterJ);
+                KeyBoardDictonary.Add('K', Form.BTN_LetterK);
+                KeyBoardDictonary.Add('L', Form.BTN_LetterL);
+                KeyBoardDictonary.Add('Z', Form.BTN_LetterZ);
+                KeyBoardDictonary.Add('X', Form.BTN_LetterX);
+                KeyBoardDictonary.Add('C', Form.BTN_LetterC);
+                KeyBoardDictonary.Add('V', Form.BTN_LetterV);
+                KeyBoardDictonary.Add('B', Form.BTN_LetterB);
+                KeyBoardDictonary.Add('N', Form.BTN_LetterN);
+                KeyBoardDictonary.Add('M', Form.BTN_LetterM);
             }
         }
         #endregion
