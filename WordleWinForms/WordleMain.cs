@@ -11,6 +11,9 @@ namespace WordleWinForms
         {
             InitializeComponent();
             LetterArray.Fill(this);
+            #if RELEASE 
+                DBG_Output.Visible = false;
+            #endif 
         }
         public bool isLastLetterInLine()
         {
@@ -38,12 +41,12 @@ namespace WordleWinForms
         public void WordTest()
         {         
 
-            if (isFirstLetterInLine())
+            if (isFirstLetterInLine() && currentletter != 30)
             {
                 MessageBox.Show("You didnt input anything!");
                 return;
             }
-            if (!isLastLetterInLine())
+            if (!isLastLetterInLine() && currentletter != 30)
             {
                 MessageBox.Show("Not enough letters!");
                 return;
@@ -84,6 +87,10 @@ namespace WordleWinForms
                 }
                 
                 lineNumber++;
+                if (currentletter == 30 && correctLetters != 5)
+                {
+                    MessageBox.Show("You failed...");
+                }
             }
         }
         private void BTN_Backspace_Click(object sender, EventArgs e)
